@@ -6,7 +6,7 @@ from lib.config import *
 from random import randint
 import os
 import base64
-import re
+
 
 CLOUDSQL_CONNECTION_NAME = os.environ.get('CLOUDSQL_CONNECTION_NAME')
 CLOUDSQL_USER = os.environ.get('CLOUDSQL_USER')
@@ -137,8 +137,3 @@ def receive_messages(username):
         else:
             decoded_message.append([decrypted, elements[1]])
     return decoded_message
-    #     
-    #     print decoded_message
-    # return decoded_message
-
-# base64.b64encode
