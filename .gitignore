@@ -1,5 +1,2 @@
-lib/**
+lib/amin
 *.pyc
-lib/six.py
-lib/itsdangerous.py
-lib/app.yaml

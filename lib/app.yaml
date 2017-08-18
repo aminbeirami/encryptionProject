@@ -1,0 +1,19 @@
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /.*
+  script: main.app
+
+libraries:
+- name: MySQLdb
+  version: "latest"
+- name: django
+  version: "1.4"
+
+# [START env_variables]
+    CLOUDSQL_CONNECTION_NAME: "your cloud sql connection name"
+    CLOUDSQL_USER: "your username"
+    CLOUDSQL_PASSWORD: "your password"
+    CLOUDSQL_DATABASE: "the database name"
