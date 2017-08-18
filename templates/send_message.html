@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<form action="{{url_for('send_message')}}" method="POST">
+	<p>type your message below</p>
+	<textarea id="message" name="message" rows="10" cols="50"> </textarea>
+	<p> who do you want to send this message to?</p>
+	<select id="dropBox" name="user">
+	{% for elements in usernames %}
+	  <option value={{elements}}>{{elements}}</option>
+	{% endfor %}
+	</select>
+	  <input type="submit">	
+</form>
+{% endblock %}

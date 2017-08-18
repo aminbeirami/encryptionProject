@@ -1,0 +1,6 @@
+Flask==0.11.1
+gunicorn==19.3.0
+functools32==3.2.3-2
+google-cloud==0.24.0
+PyMySQL==0.7.11
+six==1.10.0
