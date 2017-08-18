@@ -15,7 +15,7 @@ libraries:
   version: latest
 
 env_variables:
-    CLOUDSQL_CONNECTION_NAME: "cryptography-176921:us-central1:cryptography"
-    CLOUDSQL_USER: "amin"
-    CLOUDSQL_PASSWORD: "amin123"
-    CLOUDSQL_DATABASE: "cryptography"
+    CLOUDSQL_CONNECTION_NAME: "your database name"
+    CLOUDSQL_USER: "your username"
+    CLOUDSQL_PASSWORD: "your password"
+    CLOUDSQL_DATABASE: "database name"
